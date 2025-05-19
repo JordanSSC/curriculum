@@ -18,19 +18,76 @@
                     <li><a href="#resumen">Resumen</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
                     <li><a href="#experiencia">Experiencia</a></li>
-                    <li><a href="#educacion">Educación</a></li>
                     <li><a href="#referencias">Referencias</a></li>
                 </ul>
             </nav>
         </header>
+        <hr> 
         <main>
             <section id="perfil">
                 <h2>Perfil</h2>
+                <p> Jordan Sánchez Cevallos</p>
+                <img src="https://placehold.co/150x150" 
+                alt="Foto de perfil de Jordan Sánchez Cevallos" 
+                style=
+                "display:block; 
+                margin-top:10px;">
                 <!-- Contenido de la sección Nombre -->
             </section>
             <section id="contacto">
                 <h2>Información de contacto</h2>
                 <!-- Contenido de la sección Información de contacto -->
+                <h3> Ubicación: </h3>
+                <p>Guayaquil, Ecuador</p>
+                <h3> Email: </h3>
+                <p>jorssanc@espol.edu.ec</p>
+                <h3> Universidad: </h3>
+                <p>Escuela Superior Politécnica del Litoral (ESPOL)</p>
+                <p>
+                    Más información en el 
+                    <a href="https://www.espol.edu.ec" target="_blank" rel="noopener">sitio web oficial de ESPOL</a>.
+                </p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.1809646490262!2d-79.96772867107307!3d-2.1479348999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d2c3e7b7e2b%3A0x7e2b6e2b6e2b6e2b!2sEscuela%20Superior%20Politécnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses-419!2sec!4v1716132000000!5m2!1ses-419!2sec"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Ubicación ESPOL, Guayaquil"
+                    alt="ESPOL, Guayaquil">
+                </iframe>
+                <h3>Formulario de contacto para empleadores</h3>
+                <form action="#" method="POST" enctype="text/plain" style="display:flex; flex-direction:column; gap:10px;">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="motivo">Motivo de contacto:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="" disabled selected>Seleccione una opción</option>
+                        <option value="oferta">Oferta de empleo</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <fieldset>
+                        <legend>¿Cómo desea ser contactado?</legend>
+                        <input type="radio" id="contacto_email" name="contacto" value="email" required>
+                        <label for="contacto_email">Email</label>
+                        <input type="radio" id="contacto_telefono" name="contacto" value="telefono" required>
+                        <label for="contacto_telefono">Teléfono</label>
+                    </fieldset>
+
+                    <label for="intereses">Áreas de interés (puede seleccionar varias):</label>
+                    <select id="intereses" name="intereses[]" multiple required size="4">
+                        <option value="desarrollo">Desarrollo</option>
+                        <option value="investigacion">Investigación</option>
+                        <option value="docencia">Docencia</option>
+                        <option value="otros">Otros</option>
+                    </select>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button> 
+                </form>
             </section>
             <section id="resumen">
                 <h2>Resumen</h2>
@@ -38,19 +95,87 @@
             </section>
             <section id="habilidades">
                 <h2>Habilidades</h2>
-                <!-- Contenido de la sección Habilidades -->
+                <table style="border-collapse:collapse;">
+                    <tr>
+                        <th></th>
+                        <th>Lenguaje de programación</th>
+                        <th>Dominio</th>
+                        <th>Proyectos relacionados</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <td>Python</td>
+                        <td>Avanzado</td>
+                        <td>Automatización de datos</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>JavaScript</td>
+                        <td>Intermedio</td>
+                        <td>Desarrollo web</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Java</td>
+                        <td>Básico</td>
+                        <td>Aplicaciones universitarias</td>
+                    </tr>
+                </table>
             </section>
             <section id="experiencia">
-                <h2>Experiencia</h2>
-                <!-- Contenido de la sección Experiencia -->
+                <h2>Experiencia Laboral</h2>
+                <ol>
+                    <li>Desarrollador Backend en Empresa X (2023-2024)</li>
+                    <li>Asistente de Investigación en ESPOL (2022-2023)</li>
+                    <li>Prácticas en Desarrollo Web, Empresa Y (2021)</li>
+                </ol>
+                <h3>Showcase de Proyectos</h3>
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/Ga4w8UTb4yU?si=KxEXo-HiBPYn5tND" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
             </section>
-            <section id="educacion">
-                <h2>Educación</h2>
-                <!-- Contenido de la sección Educación -->
-            </section>
+        
             <section id="referencias">
                 <h2>Referencias</h2>
-                <!-- Contenido de la sección Referencias -->
+                <ul>
+                    <li>
+                        <article>
+                            <blockquote>
+                                "Jordan demostró gran responsabilidad y compromiso en todos los proyectos asignados."
+                            </blockquote>
+                            <p><span>Ing. María Pérez</span><br>
+                            Jefa de Desarrollo, ESPOL.<br>
+                            Trabajé con Jordan durante dos años en el área de desarrollo de software, donde destacó por su capacidad de aprendizaje y trabajo en equipo.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <blockquote>
+                                "Su creatividad y habilidades técnicas aportaron significativamente a nuestro equipo."
+                            </blockquote>
+                            <p><span>MSc. Juan Gómez</span><br>
+                            Líder de Proyecto, Empresa X.<br>
+                            Jordan participó como desarrollador backend, mostrando iniciativa y resolviendo problemas complejos con eficacia.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <blockquote>
+                                "Siempre mostró una actitud positiva y disposición para colaborar en nuevos retos."
+                            </blockquote>
+                            <p><span>Lic. Ana Torres</span><br>
+                            Coordinadora de Prácticas, Empresa Y.<br>
+                            Durante su pasantía, Jordan fue un elemento clave en la implementación de mejoras en nuestros sistemas internos.</p>
+                        </article>
+                    </li>
+                </ul>
             </section>
         </main>
         <footer>
