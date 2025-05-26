@@ -47,7 +47,9 @@ section > form{
     row-gap: 1rem;
     column-gap:1rem;
 }
-
+button {
+    width: 100px;
+}
 #referencias{
     display:flex;
     flex-wrap: wrap;    
