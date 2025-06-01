@@ -19,8 +19,8 @@
         <nav>
             <ul>
                 <li><a href="#perfil">Perfil</a></li>
-                <li><a href="#contacto">Información de contacto</a></li>
                 <li><a href="#resumen">Resumen</a></li>
+                <li><a href="#contacto">Información de contacto</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#referencias">Referencias</a></li>
@@ -29,13 +29,31 @@
     </header>
     <hr>
     <main>
-        <section id="perfil">
-            <h2 class="subtitle">Perfil</h2>
-            <p> Jordan Sánchez Cevallos</p>
-            <img id="photo" src="https://placehold.co/150x150" alt="Foto de perfil de Jordan Sánchez Cevallos" style="display:block; 
-                margin-top:10px;">
-            <!-- Contenido de la sección Nombre -->
-        </section>
+        <div class="flex-perfil-resumen">
+            <section id="perfil">
+                <h2 class="subtitle">Perfil</h2>
+                <p>Jordan Sánchez Cevallos</p>
+                <p>
+                    <a href="https://www.linkedin.com/in/jordan-sanchez-cevallos-85a977276/" target="_blank" rel="noopener"
+                        style="color:#0a66c2; text-decoration:underline;">
+                        Ver perfil en LinkedIn
+                    </a>
+                </p>
+                <img id="photo" src="media/fotoperfil.jpg" alt="Foto de perfil de Jordan Sánchez Cevallos"
+                    style="display:block; margin-top:10px;">
+            </section>
+            <section id="resumen">
+                <h2 class="subtitle">Resumen</h2>
+                <p>
+                    Soy un estudiante con interés y experiencia en el desarrollo de aplicaciones, principalmente
+                    utilizando Python, C y Java. Tengo una base sólida en lógica de programación, lo que me permite
+                    abordar y resolver problemas de manera estructurada. Aunque mi experiencia aún no es avanzada y
+                    mi portafolio de proyectos es limitado, estoy comprometido con mi aprendizaje y busco
+                    constantemente mejorar mis habilidades. Me adapto fácilmente a nuevos retos y estoy motivado a
+                    seguir creciendo en el área de desarrollo de software.
+                </p>
+            </section>
+        </div>
         <section id="contacto">
             <h2 class="subtitle">Información de contacto</h2>
             <!-- Contenido de la sección Información de contacto -->
@@ -55,7 +73,8 @@
                 referrerpolicy="no-referrer-when-downgrade" title="Ubicación ESPOL, Guayaquil" alt="ESPOL, Guayaquil">
             </iframe>
             <h3>Formulario de contacto para empleadores</h3>
-            <form action="#" method="POST" enctype="text/plain">
+            <form action="#" method="POST" enctype="text/plain"
+                style="display: flex; flex-direction: column; gap: 1em;">
                 <label for="nombre">Nombre completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
 
@@ -89,10 +108,6 @@
                 <button type="submit">Enviar</button>
             </form>
         </section>
-        <section id="resumen">
-            <h2 class="subtitle">Resumen</h2>
-            <!-- Contenido de la sección Resumen -->
-        </section>
         <section id="habilidades">
             <h2 class="subtitle">Habilidades</h2>
             <table style="border-collapse:collapse;">
@@ -105,19 +120,19 @@
                 <tr>
                     <th>1</th>
                     <td>Python</td>
-                    <td>Avanzado</td>
-                    <td>Automatización de datos</td>
+                    <td>Intermedio</td>
+                    <td>Proyecto de Gestión de Tareas</td>
                 </tr>
                 <tr>
                     <th>2</th>
-                    <td>JavaScript</td>
+                    <td>C</td>
                     <td>Intermedio</td>
-                    <td>Desarrollo web</td>
+                    <td>Programación de sistemas</td>
                 </tr>
                 <tr>
                     <th>3</th>
                     <td>Java</td>
-                    <td>Básico</td>
+                    <td>Alto</td>
                     <td>Aplicaciones universitarias</td>
                 </tr>
             </table>
@@ -129,13 +144,14 @@
                 <li>Asistente de Investigación en ESPOL (2022-2023)</li>
                 <li>Prácticas en Desarrollo Web, Empresa Y (2021)</li>
             </ol>
-            <h3>Showcase de Proyectos</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ga4w8UTb4yU?si=KxEXo-HiBPYn5tND"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-            >
-            </iframe>
+            <h3>Showcase de Proyectos (Placeholder)</h3>
+            <div class="video-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ga4w8UTb4yU?si=KxEXo-HiBPYn5tND"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
         </section>
 
         <section id="referencias">
